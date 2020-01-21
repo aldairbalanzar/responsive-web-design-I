@@ -1,3 +1,278 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+h1,
+h3 {
+  font-family: "Bangers", cursive;
+}
 
+p,
+a,
+button {
+  font-family: "Gayathri", sans-serif;
+}
 
+hr {
+    border-top: solid 3px grey;
+    width: 100%;
+  }
+
+.container {
+    max-width: 100%;
+    width: 86%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* navigator container */
+.nav-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 86%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: rgba(248, 248, 248, 0.897);
+    border: solid 1px rgba(248, 248, 248, 0.897);
+    border-radius: 3px;
+    position: fixed;
+    top: 0;
+}   
+
+.links {
+    display: flex;
+    width: 68%;
+    justify-content: space-between;
+}
+
+.links a {
+    text-decoration: none;
+    color: lightgrey;
+    padding: 1% 1% 0;
+}
+
+.links a:hover {
+    color: black;
+    transition: .5s;
+}
+
+.logo-container {
+    display: flex;
+    width: 30%;
+    justify-content: flex-end;
+}
+
+/* title container  */
+.title-container {
+    display: flex;
+    width: 100%;
+    margin: 10% 0 10%;
+    justify-content: space-evenly;
+}
+
+.slogan-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 20%;
+}
+
+.slogan {
+    width: 100%;
+    font-size: 2rem;
+}
+
+.slogan-container button {
+    background-color: white;
+    color: grey;
+    padding: 4% 12% 1%;
+    border: solid grey 2px;
+    border-radius: 6%;
+    outline: none;
+  }
+  
+.slogan-container button:hover {
+    color: black;
+    border: solid black 2px;
+    transition: 0.3s;
+  }
+
+.header-img-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+}
+
+/* section1 styling */
+.section1 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 0 1%;
+}
+
+.features, .about {
+    width: 48%;
+}
+
+.banner {
+    width: 100%;
+}
+
+/* banner imgage */
+.banner img {
+    width: 100%;
+}
+
+.section2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 1% 0;
+}
+
+.break {
+    margin-bottom: 10px;
+  }
+
+  /* section3 content */
+.section3 {
+    margin: 2% 0 6%;
+}
+.services, .product, .vision {
+    width: 30%;
+}
+
+.section3 {
+    width: 100%;
+}
+
+/* footer content */
+footer {
+    width: 100%;
+    text-align: center;
+    margin: 2% 0;
+  }
+
+  /* media queries for screen sizes */
+
+@media (max-width: 1000px) {
+    .header-img-container {
+        display: none;
+    }
+    .slogan-container {
+        width: 34%;
+    }
+
+}
+@media (max-width: 800px) {
+    .container {
+        width: 90%;
+    }
+    .nav-container {
+        display: flex;
+        width: 90%;
+        background-color: white;
+        border: none;
+        flex-direction: column-reverse;
+    }
+    .links {
+        width: 100%;
+        justify-content: space-between;
+        align-content: flex-end;
+    }
+    .logo-container {
+        width: 100%;
+        justify-content: center;
+        align-content: flex-start;
+        margin: 1% 0 4%; 
+    }
+    .title-container {
+        margin: 16% 0 8%;
+    }
+    .slogan-container {
+        width: 34%;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+    }
+    .nav-container {
+        width: 100%;
+        position: static;
+    }
+    .logo-container {
+        border-bottom: solid 1px grey;
+        padding: 4% 0 4%;
+        margin: 0
+    }
+    .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    .links a {
+        border-bottom: solid 1px grey;
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-align: center;
+        padding: 6% 0 4%;
+    }
+    .title-container {
+        width: 100%;
+        margin: 0;
+    }
+    .slogan-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        justify-content: center;
+    }
+    .slogan {
+        width: 100%;
+
+    }
+    .slogan h1 {
+        text-align: center;
+        font-size: 4.2rem;
+        letter-spacing: 3px;
+    }
+    .slogan-button {
+        width: 100%;
+        margin: 0 0 10%;
+    }
+    hr {
+        width: 90%;
+    }
+    .section1 {
+        width: 90%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-items: center;
+    }
+    .features, .about {
+        width: 100%;
+    }
+    .banner {
+        width: 90%;
+    }
+    .section2 {
+        width: 90%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .services, .product, .vision {
+        width: 100%;
+    }
+    .section3 {
+        width: 90%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

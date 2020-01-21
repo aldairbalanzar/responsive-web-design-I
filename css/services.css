@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h3 {
+  font-family: "Bangers", cursive;
+}
+
+p,
+a,
+button,
+li {
+  font-family: "Gayathri", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.nav-container {
+    display: flex;
+    width: 100%;
+    position: static;
+    flex-direction: column-reverse;
+}
+.logo-container {
+    display: flex;
+    justify-content: center;
+    border-bottom: solid 1px grey;
+    padding: 4% 0 4%;
+    margin: 0
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.links a {
+    border-bottom: solid 1px grey;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 6% 0 4%;
+    text-decoration: none;
+    color: grey;
+}
+
+.banner-img-container {
+    display: flex;
+    width: 100%;
+}
+
+.banner-img-container img {
+    width: 100%;
+}
+
+.section1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 2%;
+}
+
+.section2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 96%;
+}
+
+.digital-design, .digital-marketing, .ios-dev, .ux-ui, .web-dev, .android-dev {
+    width: 100%;
+    background-color: lightgrey;
+    border: solid 1px dimgrey;
+    border-radius: 3px;
+    padding: 0 2%;
+    margin: 1% 0;
+}
+
+.section2 button {
+    background-color: white;
+    color: grey;
+    padding: 1% 1% 0;
+    border: solid grey 1px;
+    border-radius: 3px;
+    outline: none;
+    margin: 0 0 1%;
+  }
+
+.amazing-facts {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.facts-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.facts-container h3 {
+    width: 100%;
+}
+
+.amazing-fact ul {
+    display: flex;
+    align-content: center;
+    width: 50%;
+}
+
+.amazing-facts ul li {
+    font-size: 1.4rem;
+    padding: 10% 0 0;
+}
+
+.section3-img-container {
+    display: flex;
+    width: 100%;
+}
+
+.section3-img-container img {
+    width: 100%;
+}
+
+.section3-img-container {
+    display: none;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 2% 0;
+}
+
+@media (min-width: 800px) {
+    .container {
+        max-width: 100%;
+        width: 90%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .nav-container {
+        display: flex;
+        width: 90%;
+        position: fixed;
+        align-items: center;
+        padding: 1%;
+        background-color: white;
+        border-radius: 3px;
+        position: fixed;
+        top: 0;
+    }
+    .logo-container {
+        border: none;
+        padding: 0 0 2%;
+    }
+    .links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .links a {
+        border: none;
+        padding: 0;
+    }
+    .banner-img-container {
+        margin: 14% 0 0;
+    }
+    .section2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        display: 100%;
+        border-top: solid 2px grey;
+        border-bottom: solid 2px grey;
+        padding: 3% 0;
+    }
+    .digital-design, .digital-marketing, .ios-dev, .ux-ui, .web-dev, .android-dev {
+        width: 49%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .container {
+    max-width: 100%;
+    width: 86%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    
+    .nav-container {
+        flex-direction: row;
+        width: 86%;
+    }
+    .links {
+        width: 70%;
+    }
+    .logo-container {
+        display: flex;
+        width:30%;
+        justify-content: flex-end;
+    }
+    .banner-img-container {
+        margin: 4% 0 0;
+    }
+    .section3 {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: 4% 0 6%;
+    }
+    .amazing-facts {
+        display: flex;
+        flex-wrap: wrap;
+        width: 46%;
+    }
+    .facts-container {
+        display: flex;
+        width: 100%;
+    }
+    .facts-list {
+        display: flex;
+        width: 100%;
+    }
+    .amazing-facts ul li {
+        padding: 0;
+        font-size: 1.2rem;
+    }
+    .section3-img-container {
+        display: flex;
+        width: 46%;
+    }
+    .section3-img-container img {
+        border-radius: 3px;
+    }
+}
